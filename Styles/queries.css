@@ -1,0 +1,165 @@
+@media screen and (max-width: 768px) {
+    .banner-img img{
+        max-width: 100%;
+    }
+    .intro h3{
+        font-size: 36px;
+    }
+    .contact{
+        margin: 15vh 8vw;
+    }
+    .contact-form input{
+        width: 40vw;
+    }
+    .socials img{
+        width: 30vw;
+    }
+    
+    /* About */
+    .about-intro{
+        margin: 8vh 3vw;
+    }
+    .about-intro .abt-txt{
+        margin-left: 3vw;
+    }
+    .abt-txt h3{
+        font-size: 36px;
+        margin-bottom: 1vh;
+    }
+    .abt-txt p {
+        margin-top: 3vh;
+    }
+
+    /* Home */
+    .who-we-are-img img{
+        width: 440px;
+    }
+    .who-we-are-txt h3{
+        font-size: 36px;
+    }
+    .who-we-are-txt p{
+        margin-top: 4vh;
+    }.qualities{
+        max-width: 100%;
+    }
+    .qualities p{
+        font-size: 18px;
+    }
+    .picture-gallery{
+        flex-direction: column;
+    }
+    .pic-batch img:nth-of-type(1) {
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-width: 600px){
+   .nav-links{
+       display: none;
+   } 
+   .menu-bar div{
+       display: block;
+   }
+   .get-in-touch{
+       flex-direction: column;
+   }
+   .connect-with-us{
+       margin-left: 2vw;
+       margin-top: 23vh;
+   }
+   .contact-form{
+       margin: 0 0 0 0;
+   }
+   .contact-form input{
+       width: 84vw;
+   }
+   .socials img{
+     width: 75vw;
+    }
+    .footer-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navlinks-mobile{
+        display: block;
+        background-color: white;
+        z-index: 2;
+        width: 100%;
+        position: absolute;
+        top: 17vh;
+        text-align: center;
+        left: 0;
+    }
+    .navlinks-mobile ul{
+        flex-direction: column;
+    }
+    .navlinks-mobile ul li {
+        margin: 5vh 0 2vh 0;
+    }
+    .nav-links ul li a:hover::after{
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    /* Home */
+    .who-we-are{
+        flex-direction: column;
+    }
+    .who-we-are-img img{
+        margin: 0 5%;
+        width: 546px;
+    }
+    .who-we-are-txt h3{
+        margin-top: 4vh;
+    }
+    
+    .qualities p{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+}
+/* @media screen and (max-width: 425px){
+   .nav-links{
+       display: none;
+   } 
+   .menu-bar div{
+       display: block;
+   }
+   .get-in-touch{
+       flex-direction: column;
+   }
+   .connect-with-us{
+       margin-left: 2vw;
+       margin-top: 23vh;
+   }
+   .contact-form{
+       margin: 0 0 0 0;
+   }
+   .contact-form input{
+       width: 84vw;
+   }
+   .socials img{
+     width: 75vw;
+    }
+    .footer-menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navlinks-mobile{
+        display: block;
+        background-color: white;
+        z-index: 2;
+        width: 100%;
+        position: absolute;
+        top: 17vh;
+        text-align: center;
+        left: 0;
+    }
+    .navlinks-mobile ul{
+        flex-direction: column;
+    }
+    .navlinks-mobile ul li {
+        margin: 5vh 0 2vh 0;
+    }
+} */

@@ -19,6 +19,25 @@ header nav{
     justify-content: space-evenly;
     margin: 2.5vh 3vw 0 0;
 }
+.closebtn{
+    font-size: 48px;
+    font-weight: 900;
+    color: #000000;
+    cursor: pointer;
+    display: none;
+}
+.menu-bar{
+    margin-top: 2vh;
+}
+.menu-bar div{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display: none;
+    cursor: pointer;
+}
+
 .nav-links ul li{
     margin: 0 2vw;
 }
@@ -27,6 +46,19 @@ header nav{
     color: black;
     font-size: 18px;
     font-weight: 700;
+    padding-bottom: 0.5vh;
+}
+.nav-links ul li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgba(69, 127, 141, 1);
+    transition: width .3s
+}
+.nav-links ul li a:hover::after{
+    width: 100%;
+    transition-delay: width .3s;
 }
 .banner-img img{
     max-width: 98.7vw;
@@ -55,6 +87,7 @@ header nav{
     color: #ffffff;
     background-color: rgba(69, 127, 141, 1);
     border: none;
+    border-radius: 8px;
 }
 .qualities{
     display: flex;
@@ -89,7 +122,17 @@ header nav{
     padding: 2.5vh 0;
 }
 .picture-gallery{
-    margin: 8vh 2vw;
+    margin: 8vh 6vw;
+    display: flex;
+    flex-direction: row;
+}
+.picture-gallery .pic-batch{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+.pic-batch img:nth-of-type(2){
+    margin-top: 3vh;
 }
 footer{
     background-color: rgba(237, 244, 246, 1);
@@ -121,6 +164,85 @@ footer{
     margin-top: 4vh;
 }
 
+/* About */
+.about-intro{
+    display: flex;
+    flex-direction: row;
+    margin: 8vh 7vw;
+}
+.about-intro .abt-txt{
+    margin-left: 5vw;
+}
+.abt-txt h3{
+    margin-bottom: 2vh;
+    color: rgba(69, 127, 141, 1);
+    font-size: 40px;
+    font-weight: 700;
+}
+.abt-txt p{
+    line-height: 26px;
+    margin-top: 7vh;
+}
+.vision-mission{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh 7vw;
+}
+.vision-mission h3{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5vh;
+}
+.vision-row{
+    margin-right: 5vw;
+}
+.vision h3{
+    color: rgba(46, 101, 146, 1);
+}
+.mission h3{
+    color: rgba(98, 169, 119, 1);
+}
+.value h3{
+    color: rgba(75, 165, 186, 1);
+}
+.vision-row p{
+    line-height: 24px;
+}
+.vision-row .vision,.mission,.value{
+    margin: 12vh 0;
+}
+
+.vision-mission .img-batch2{
+    display: flex;
+    flex-direction: row;
+}
+.img-batch2 img:nth-child(2){
+    margin-left: 1vw;
+}
+.img-batch3{
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+}
+.img-batch{
+    margin-left: 1vw;
+}
+.img-batch img:nth-of-type(2){
+    margin-top: 1vh;
+}
+.value ul{
+    margin-left: 1vw;
+}
+.value ul li{
+    margin-top: 2vh;
+    list-style-type: none;
+}
+.value ul li::before{
+    content: url(../Images/Vector.png);
+    display: inline-block;
+    margin-right: 1vw;
+}
+
 /* Contact */
 .details{
     margin-bottom: 20vh;
@@ -135,10 +257,12 @@ footer{
     color: rgba(69, 127, 141, 1);
 }
 .contact{
+    margin: 15vh 10vw;
+}
+.get-in-touch{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 15vh 10vw;
 }
 .intro{
     margin-bottom: 8vh;
@@ -148,6 +272,9 @@ footer{
     font-weight: 700;
     color: rgba(69, 127, 141, 1);
     margin-bottom: 3vh;
+}
+.connect-with-us{
+    margin-top: -35vh;
 }
 .connect-with-us p{
     margin-bottom: 4vh;
@@ -159,6 +286,7 @@ footer{
 .socials img{
     margin-top: 3vh;
     width: 22vw;
+    border-radius: 8px;
 }
 .contact-form{
     margin: 0 0 0 13vw;
@@ -175,11 +303,11 @@ form label{
 .contact-form input{
     width: 32vw;
     padding: 2vh 0;
-    border-radius: 12px;
+    border-radius: 8px;
     border: solid 1px rgba(204, 204, 204, 1);
 }
 .contact-form textarea{
-    border-radius: 12px;
+    border-radius: 8px;
     margin-bottom: 2vh;
     border-color: rgba(204, 204, 204, 1);
 }
