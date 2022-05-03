@@ -26,10 +26,10 @@ for (var i = 0; i < 4; i++) {
 var modal = document.querySelector(".myModal");
 var close = document.querySelector("#close-Btn");
 
-document.getElementById("form").onsubmit = function(event){
-    event.preventDefault();
-    modal.style.display = "block";
-};
+// document.getElementById("form").onsubmit = function(event){
+//     event.preventDefault();
+//     modal.style.display = "block";
+// };
 
 close.addEventListener("click", function(){
     modal.style.display = "none";
