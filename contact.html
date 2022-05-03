@@ -7,11 +7,20 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Contact Us..</title>
 
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="Styles/styles.css">
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/98c387ed78.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <header>
@@ -27,10 +36,10 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="index.html" class="nav-list">Home</a></li>
+                    <li><a href="about.html" class="nav-list">About</a></li>
+                    <li><a href="services.html" class="nav-list">Services</a></li>
+                    <li><a href="contact.html" class="nav-list">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -59,7 +68,7 @@
                     </div>
                 </div>
                 <section class="contact-form">
-                    <form action="">
+                    <form action="" id="form">
                         <label for="fullName">Full Name</label><br/>
                         <input type="text" name="FullName" id="fullName">
                         <label for="email">Email</label><br/>
@@ -68,39 +77,28 @@
                         <input type="text" name="Phone_number" id="phoneNumber">
                         <label for="message">Message</label><br/>
                         <textarea name="message" id="message" cols="40" rows="13"></textarea>
-                        <input type="submit" value="Send Message" id="submit">
+                        <input type="submit" value="SEND MESSAGE" id="submit">
                     </form>
                 </section>
-                <!-- <div class="connect-with-us">
-                    <p>Connect with us on our socail platforms</p>
-                    <div class="socials">
-                        <img src="Images/facebook.png" alt="">
-                        <img src="Images/twitter.png" alt="">
-                        <img src="Images/instagram.png" alt="">
-                    </div>
-                </div> -->
             </section>
             <div class="connect-with-us">
                 <p>Connect with us on our social platforms</p>
                 <div class="socials">
-                    <img src="Images/facebook.png" alt="">
-                    <img src="Images/twitter.png" alt="">
-                    <img src="Images/instagram.png" alt="">
+                    <a href=""><img src="Images/facebook.png" alt=""></a>
+                    <a href=""><img src="Images/twitter.png" alt=""></a>
+                    <a href=""><img src="Images/instagram.png" alt=""></a>
                 </div>
             </div>
-            <!-- <section class="contact-form">
-                <form action="">
-                    <label for="fullName">Full Name</label><br/>
-                    <input type="text" name="FullName" id="fullName">
-                    <label for="email">Email</label><br/>
-                    <input type="text" name="Email" id="email">
-                    <label for="phoneNumber">Phone Number</label><br/>
-                    <input type="text" name="Phone_number" id="phoneNumber">
-                    <label for="message">Message</label><br/>
-                    <textarea name="message" id="message" cols="40" rows="13"></textarea>
-                    <input type="submit" value="Send Message" id="submit">
-                </form>
-            </section> -->
+        </section>
+        <section class="modal myModal modal-item">
+            <div class="modal-content">
+                <span class="closebtn" id="close-Btn">&times;</span>
+                <section class="mail-sent">
+                    <img src="Images/email-sent 1.png" alt="">
+                    <h3>Your Email has been sent</h3>
+                    <p>You will get a response as soon as we get your enquiry</p>
+                </section>
+            </div>
         </section>
     </main>
     <footer>
