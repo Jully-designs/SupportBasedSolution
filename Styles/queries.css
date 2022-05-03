@@ -32,7 +32,7 @@
 
     /* Home */
     .who-we-are-img img{
-        width: 440px;
+        width: 50vw;
     }
     .who-we-are-txt h3{
         font-size: 36px;
@@ -50,6 +50,24 @@
     }
     .pic-batch img:nth-of-type(1) {
         margin-top: 3vh;
+    }
+    .vision-mission{
+        flex-direction: column;
+    }
+    .vision-img{
+        order: 1;
+        margin: 2vh 4vw;
+    }
+    .vision-row{
+        order: 2;
+    }
+
+    /* Services */
+    .what-we-do-list{
+        margin: 2vh 2vw;
+    }
+    .one p{
+        margin-top: 1vh;
     }
 }
 
@@ -107,7 +125,7 @@
     }
     .who-we-are-img img{
         margin: 0 5%;
-        width: 546px;
+        width: 90vw;
     }
     .who-we-are-txt h3{
         margin-top: 4vh;
@@ -118,48 +136,114 @@
         font-weight: 700;
     }
 
+    /* About */
+    .about-intro{
+        flex-direction: column;
+    }
+    .abt-img{
+        margin: 2vh 12vw;
+    }
+    .vision-mission{
+        margin: 5vh 2vw;
+    }
+    .vision-row{
+        margin: 2vh 2vw;
+    }
+    .vision-img{
+        margin: 2vh 1vw;
+    }
+    .vision-img .img-one{
+        width: 95vw;
+    }
+    .img-batch2 .img-two{
+        width: 50.5vw;
+    }
+    .img-batch2 .img-three{
+        width: 50vw;
+    }
+    .img-batch3 .img-four{
+        width: 65vw;
+    }
+
 }
-/* @media screen and (max-width: 425px){
-   .nav-links{
-       display: none;
-   } 
-   .menu-bar div{
-       display: block;
-   }
-   .get-in-touch{
-       flex-direction: column;
-   }
-   .connect-with-us{
-       margin-left: 2vw;
-       margin-top: 23vh;
-   }
-   .contact-form{
-       margin: 0 0 0 0;
-   }
-   .contact-form input{
-       width: 84vw;
-   }
-   .socials img{
-     width: 75vw;
+@media screen and (max-width: 425px){
+    .who-we-are-img img{
+        margin: 0 5%;
     }
-    .footer-menu{
-        flex-direction: column;
-        text-align: center;
-    }
-    .navlinks-mobile{
-        display: block;
-        background-color: white;
-        z-index: 2;
-        width: 100%;
-        position: absolute;
-        top: 17vh;
-        text-align: center;
-        left: 0;
-    }
-    .navlinks-mobile ul{
+    .qualities{
         flex-direction: column;
     }
-    .navlinks-mobile ul li {
-        margin: 5vh 0 2vh 0;
+    .qualities p{
+        text-align: center;
     }
-} */
+    .qualities div{
+        margin-bottom: 4vh;
+    }
+
+    /* About */
+    .abt-img{
+        margin: 2vh 5vw;
+    }
+    .abt-img img{
+        width: 85vw;
+    }
+    .img-batch2 .img-two{
+        width: 47vw;
+    }
+    .img-batch2 .img-three{
+        width: 47vw;
+    }
+    .img-batch3 .img-four{
+        width: 60vw;
+    }
+    .img-batch .img-five{
+        width: 34vw;
+    }
+    .img-batch .img-six{
+        width: 34vw;
+    }
+
+    /* Services */
+    .what-we-do h3{
+        font-size: 36px;
+    }
+    .what-we-do-list{
+        margin: 2vh 8vw;
+        flex-direction: column;
+    }
+    .one p{
+        margin-top: 1.5vh;
+    }
+    .eight-fourteen{
+        margin-top: -6vh;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .what-we-do-list{
+        margin: 2vh 4vw;
+    }
+    .one::before{
+        margin-right: 2.5vw;
+    }
+}
+@media screen and (max-width: 320px) {
+    .what-we-do{
+        margin: 8vh 8vw 3vh 8vw;
+    }
+    .what-we-do h3{
+        font-size: 28px;
+    }
+    .what-we-do-list{
+        margin: 2vh 4vw;
+    }
+    .one{
+        margin: 6vh 2vw;
+    }
+    .one h3{
+        font-size: 26px;
+    }
+    .one p{
+        margin-top: 1vh;
+    }
+}

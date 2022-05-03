@@ -13,3 +13,24 @@ closeBtn.addEventListener("click",() => {
     closeBtn.style.display = "none";
     menuIcon.style.display = "block";
 })
+
+//Active state
+for (var i = 0; i < 4; i++) {
+    if (document.links[i].href === document.URL) {
+        document.links[i].className = 'active';
+    }
+}
+
+//onSubmit
+
+var modal = document.querySelector(".myModal");
+var close = document.querySelector("#close-Btn");
+
+document.getElementById("form").onsubmit = function(event){
+    event.preventDefault();
+    modal.style.display = "block";
+};
+
+close.addEventListener("click", function(){
+    modal.style.display = "none";
+});
