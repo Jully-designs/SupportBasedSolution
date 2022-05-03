@@ -281,6 +281,9 @@ footer{
     margin-right: 1vw;
     color: rgba(69, 127, 141, 1);
 }
+.detail p{
+    margin-top: -1vh;
+}
 .contact{
     margin: 15vh 10vw;
 }
